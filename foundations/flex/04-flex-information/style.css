@@ -24,3 +24,34 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* solution */
+
+body {
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap:52px;
+}
+
+/* can just replace whole thing with max-width, but still works */
+.item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 200px;
+}
+
+/* they used max-width instead of flex-basis */
+
+/* they used text-align: center; on the body which i added, to center the text more */
+
