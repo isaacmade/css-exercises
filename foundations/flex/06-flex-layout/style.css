@@ -24,3 +24,64 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* solutionzzz */
+
+/* played around and you can either give the body a display of flex, or wrap everything
+in a flex wrapper and give that a display of flex. Setting content to flex: 1; with the body to flex
+will be a different result to wrapping in a flex wrapper. > (have to add the 
+min-height: 100vh;. not sure which way is better.) */
+
+body {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+}
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(141, 141, 141);
+}
+/* 
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: auto; */
+  padding: 2px;
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: 20px;
+  margin: 12px;
+  padding: 0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 2px;
+  /* margin-top: auto; */
+  background-color: #eeeeee;
+}
